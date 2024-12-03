@@ -16,7 +16,7 @@ body {
   background-color: var(--yellow);
 }
 
-.layout {
+.max-size {
   inline-size: 940px;
   margin-inline: auto;
 }
