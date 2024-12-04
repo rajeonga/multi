@@ -12,3 +12,14 @@
     transform: translate(400px, 75px);
   }
 }
+
+/* Fade 애니메이션 */
+@keyframes fadeEffect {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
