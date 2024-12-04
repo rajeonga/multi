@@ -27,4 +27,5 @@
     var(--orangered) 60%,
     var(--orange) 100%
   );
+  --border-color: var(--gray-500);
 }
