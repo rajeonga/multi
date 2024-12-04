@@ -23,8 +23,8 @@
   --menu: linear-gradient(
     180deg,
     var(--orange) 0%,
-    var(--orangered) 30.73%,
-    var(--orangered) 64.58%,
+    var(--orangered) 35%,
+    var(--orangered) 60%,
     var(--orange) 100%
   );
 }
