@@ -264,8 +264,6 @@
 
 /* 유효성 검사 배너 */
 .validation {
-  /* background-color: yellow; */
-
   ul {
     display: flex;
     flex-flow: column nowrap;
