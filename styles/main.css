@@ -372,6 +372,66 @@
   }
 }
 
+/* 공지사항 및 자료실 */
+
+.tabs {
+  position: relative;
+
+  .is-hidden {
+    display: none;
+  }
+
+  [role="tablist"] {
+    display: flex;
+  }
+
+  [role="tab"] {
+    background: var(--gray-400);
+    border: 1px solid var(--gray-600);
+    padding: 8px 12px;
+    border-radius: 5px 5px 0 0;
+
+    &[aria-selected="true"] {
+      background: var(--white);
+      color: var(--orangered);
+      border-color: currentColor currentColor transparent currentColor;
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 8px;
+    margin-top: 15px;
+
+    li {
+      display: flex;
+      flex-flow: row nowrap;
+      gap: 10px;
+
+      a {
+        flex-grow: 1;
+        span {
+          margin-right: 6px;
+        }
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      time {
+        flex-shrink: 0;
+      }
+    }
+  }
+
+  .more {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
 .slogan {
   background-color: lightgreen;
   height: 10vh;
