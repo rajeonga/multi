@@ -298,35 +298,34 @@
     display: contents;
   }
 
+  div {
+    display: grid;
+    column-gap: 15px;
+    row-gap: 5px;
+  }
+
+  dl div:nth-child(odd) {
+    grid-template-areas: "thumbnail subject" "thumbnail brief";
+    grid-template-columns: 60px 1fr;
+  }
+
   dl div:nth-child(even) {
-    dt {
-      float: left;
-    }
-
-    dd:nth-of-type(1) {
-      float: right;
-    }
-
-    dd:nth-of-type(2) {
-      float: left;
-    }
+    grid-template-areas: "subject thumbnail" "brief thumbnail";
+    grid-template-columns: 1fr 60px;
   }
 
   dt {
-    width: 140px;
-    float: right;
     font-weight: 500;
     color: var(--blue);
-    margin-bottom: 5px;
+    grid-area: subject;
   }
 
   div dd:nth-of-type(1) {
-    float: left;
+    grid-area: thumbnail;
   }
 
   div dd:nth-of-type(2) {
-    width: 140px;
-    float: right;
+    grid-area: brief;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
