@@ -240,7 +240,7 @@
               </li>
             </ul>
           </div>
-          <div class="term">
+          <div class="term gradient-bg">
             <h2 class="headline">웹 관련 용어</h2>
             <dl>
               <div>
@@ -253,7 +253,7 @@
               </div>
               <div>
                 <dt>웹 접근성 이란?</dt>
-                <dd><img src="./assets/web_accessbility.png" alt="" /></dd>
+                <dd><img src="./assets/web_accessibility.png" alt="" /></dd>
                 <dd>
                   모든 사용자가 신체적, 환경적 조건에 관계없이 웹 사이트에서
                   제공하는 정보에 접근할 수 있도록 보장해야 한다.
@@ -262,7 +262,25 @@
             </dl>
           </div>
         </div>
-        <div class="group group2">컬럼2</div>
+        <div class="group group2">
+          <div class="search gradient-bg">
+            <h2 class="sr-only">검색</h2>
+            <form action="/">
+              <div class="form-input">
+                <label for="search"
+                  ><span class="fab fa-sistrix"></span>자료검색</label
+                >
+                <input
+                  type="search"
+                  id="search"
+                  placeholder="검색어를 입력하세요"
+                  required
+                />
+              </div>
+              <button class="button-fill" type="submit">검색</button>
+            </form>
+          </div>
+        </div>
         <div class="group group3">컬럼3</div>
       </main>
       <article class="slogan max-size">슬로건</article>
