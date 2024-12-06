@@ -499,6 +499,39 @@
   }
 }
 
+/* 신규이벤트 */
+.event {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  gap: 10px;
+
+  .button-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 5px;
+  }
+
+  .event-thumbnail {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+
+    img {
+      box-shadow: 5px 5px 0 0 var(--gray-400);
+    }
+
+    figcaption {
+      line-height: 1.5;
+
+      em {
+        font-style: normal;
+      }
+    }
+  }
+}
+
 /* 인기 사이트 */
 .favorite {
   border-radius: 5px;

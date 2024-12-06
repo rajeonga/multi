@@ -51,13 +51,28 @@
 }
 
 /* 더보기 링크 */
-
 .more {
   display: inline-flex;
-  gap: 4px;
   align-items: center;
+  gap: 4px;
 
   span {
     color: var(--green);
+  }
+}
+
+/* 이전/다음 버튼 */
+.button-sprite {
+  width: 19px;
+  height: 18px;
+  border: 0;
+  padding: 0;
+  background: url(./../assets/back_forward.png) no-repeat;
+
+  &:button-prev {
+    background-position: 0 0;
+  }
+  &.button-next {
+    background-position: 100% 0;
   }
 }
